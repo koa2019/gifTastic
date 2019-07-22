@@ -2,17 +2,28 @@
 import bootstrap
 
 create array with theme objects
+    var cartoons = [];
 
-create buttonsContainer via jQuery
-    create a button for each theme arr object
-    .click sends an ajax request
+create div class=buttonsContainer 
+
+function makeButton(){
+    Must empty() buttonsContainer before appending or it'll cause duplicate buttons
+    create a button for each cartoons[] index object
+    append button to buttonsContainer
+    set button values for name, text, class
+}
+
+create .click for cartoon button that sends an ajax request
         create ajax request for the data value of this button name=
 
 create div class= addButtonContainer
-    <form> add-userInput
+    <form> to accept userInput
     create input box to enter text
-    create submit buton 
-.click creates a new button with userInput
+    create submit button 
+.click captures value of user input & stores in a new variable
+    pushes new variable to theme array
+    create a new button with userInput in buttonsContainer 
+        create a renderQuestions() & then call function here
 
 create div=responseContainer - set response on page
     gif .click state changes to still/animate && animate/still

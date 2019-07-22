@@ -8,8 +8,10 @@ var index;
 
 $(document).ready(function() {
 
-    // renderButtons();
+    //call to display initial cartoons array
+    renderButtons();
 
+    //function empties container before writing & appending buttons to page
     function renderButtons() {
 
         //empties container before writing new buttons to page
@@ -45,8 +47,16 @@ $(document).ready(function() {
         $('#cartoon-form').trigger("reset");
 
     });
+    // renderButtons();
 
-    renderButtons();
+    //event listener for buttons clicked with class=cartoon
+    $(document).on("click", ".cartoon", alertCartoonName);
+
+    function alertCartoonName() {
+        var cartoon = $(this).attr('name');
+        alert('cartoon name = ' + cartoon);
+    }
+
     // showGifs();
 
     // function showGifs() {
