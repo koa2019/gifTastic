@@ -20,7 +20,7 @@ create div class= addButtonContainer
     <form> to accept userInput
     create input box to enter text
     create submit button 
-    
+
 .click captures value of user input & stores in a new variable
     pushes new variable to theme array
     create a new button with userInput in buttonsContainer 
@@ -106,3 +106,18 @@ Attempt to complete homework assignment as described in instructions. If unable 
    * This should persist even when they select or add a new topic.
    * If you are looking for a major challenge, look into making this section persist even when the page is reloaded(via localStorage or cookies).
 
+### Reminder: Submission on BCS
+
+* Please submit both the deployed Github.io link to your homework AND the link to the Github Repository!
+
+- - -
+
+### Create a README.md
+
+Add a `README.md` to your repository describing the project. Here are some resources for creating your `README.md`. Here are some resources to help you along the way:
+
+* [About READMEs](https://help.github.com/articles/about-readmes/)
+
+* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+- - -
