@@ -12,7 +12,8 @@ $(document).ready(function() {
 
     function renderButtons() {
 
-        //empties container before writing buttons to page
+        //empties container before writing new buttons to page
+        //otherwise will get duplicate buttons
         $('.buttonContainer').empty();
 
         for (var x = 0; x < cartoons.length; x++) {
@@ -24,8 +25,6 @@ $(document).ready(function() {
                 .text(index);
             $('.buttonContainer').append(button); //create button & add to page
         }
-        $('#cartoon-input').empty();
-
     }
     //event listener to capture & store user input from form
     $('#add-cartoon').on('click', function(event) {
@@ -41,6 +40,9 @@ $(document).ready(function() {
 
         //call function to display object in array
         renderButtons();
+
+        //clears input box 
+        $('#cartoon-form').trigger("reset");
 
     });
 
