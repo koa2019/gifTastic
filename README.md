@@ -6,12 +6,12 @@ create array with theme objects
 create buttonsContainer via jQuery
     create a button for each theme arr object
     .click sends an ajax request
+        create ajax request for the data value of this button name=
 
-create div class= container addButton for userInput
-
-create input box to enter text
-
-create submit buton 
+create div class= addButtonContainer
+    <form> add-userInput
+    create input box to enter text
+    create submit buton 
 .click creates a new button with userInput
 
 create div=responseContainer - set response on page

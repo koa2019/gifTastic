@@ -17,26 +17,38 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="buttonContainer">Buttons</div>
+            <div class="col-lg-12">
+                <div class="buttonContainer m-2"></div>
             </div>
         </div>
 
         <div class="row">
-            <div class="responseContainer col">responses</div>
+            <div class="col-md-6 d-inline">
+                <div class="responseContainer">Responses</div>
+            </div>
 
-            <div class="addButtonContainer container">
-                <form id="add-form">
-                    <label for="add-input">Add a Cartoon Character</label>
-                    <input type="text" id="add-input"><br>
+            <div class="col-md-6 d-inline">
+                <div class="addButtonContainer">
+                    <form id="cartoon-form">
+                        <label for="cartoon-input">Add a Cartoon</label>
+                        <input type="text" id="cartoon-input"><br>
 
-                    <!-- Button triggers new add to be added -->
-                    <input id="add-add" type="submit" value="Add a Cartoon Character">
-                </form>
+                        <!-- Button triggers new movie to be added -->
+                        <input id="add-cartoon" type="submit" value="Find your Cartoon!">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
 </body>
+<style type="text/css">
+    button {
+        /* div,
+    form,
+    input { */
+        margin: 10px;
+    }
+</style>
 
 </html>
